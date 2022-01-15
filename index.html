@@ -22,7 +22,7 @@
                 <ul>
                     <li><a href="#">MENU</a></li>
                     <li><a href="#">BEST DEALS</a></li>
-                    <li><a href="#">ONLINE ORDER</a></li>
+                    <li><a href="#">BLOG</a></li>
                 </ul>
             </div>
             <!--cart-->
@@ -33,5 +33,41 @@
         </div>
     </div>
 
-    
+    <!--Ordering Pizza-->
+    <div class="container">
+        <div class="row">
+            <div class="main col-md-5 offset-7">
+                <div class="view-one">
+                    <h2>Mum makes the best pizzas</h2>
+                    <input type="button" value="ORDER ONLINE" class="button" id="order-online">
+                </div>
+
+                <div class="view-two">
+                    <form id="form1" class="form" name="form1" action="">
+                        <legend>Place your order here:</legend>
+
+                        <label for="pizza">Select your pizza</label>
+                        <select id="pizza" name="pizza" required>
+                            <option disabled selected>Pizza type</option>
+                            <option value="veggie">VEGETARIAN</option>
+                            <option value="periperi">CHICKEN PERIPERI</option>
+                            <option value="mushroom">CHICKEN & MUSHROOM</option>
+                            <option value="hawaiian">HAWAIIN</option>
+                            <option value="steak">STEAK</option>
+                            <option value="pig">BOEREWORS</option>
+                        </select>
+
+                        <label for="size">Select a size</label>
+                        <select id="size" name="size">
+                            <option disabled selected>Pizza Size</option>
+                            <option value="large">LARGE --- Ksh. 1,000</option>
+                            <option value="medium">MEDIUM--- Ksh. 800</option>
+                            <option value="small">SMALL --- Ksh. 550</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 </body>
