@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="navigation-container">
         <div class="navigation-content">
             <!--logo-->
             <div class="logo">
-                <img src="img/pizzalogo.png"/>
+                <img src="img/pizzalogo.png" />
             </div>
 
             <div class="menu">
@@ -75,11 +76,57 @@
 
                         <label for="toppings">Select your extra toppings</label><br>
                         <p>Small -- Ksh. 50, Medium -- Ksh. 100, Large -- Ksh. 150</p>
-                        
+                        <div class="checkbox">
+                            <input type="checkbox" value="sausage" name="toppings" id="sausage">
+                            <label for="Sausage">SAUSAGE</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="cheese" name="toppings" id="cheese">
+                            <label for="cheese">CHEESE</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="mushroom" name="toppings" id="mushroom">
+                            <label for="mushroom">MUSHROOM</label>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" value="bacon" name="toppings" id="bacon">
+                            <label for="bacon">BACON</label>
+                        </div> <br>
+
+                        <input type="submit" value="CONTINUE" class="button" id="continue">
+                        <div class="output"></div>
+
+
                     </form>
                 </div>
+
+                <div class="view-three">
+                    <h2>Confirm Your order</h2>
+                    <table class="confirm-order">
+                        <thead>
+                            <tr>
+                                <th><strong>NAME</strong></th>
+                                <th><strong>SIZE</strong></th>
+                                <th><strong>CRUST</strong></th>
+                                <th><strong>TOPPINGS</strong></th>
+                                <th><strong>TOTAL</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody class="current-order">
+                            <tr>
+                                <td id="name"></td>
+                                <td id="size"></td>
+                                <td id="crust"></td>
+                                <td id="toppings"></td>
+                                <td id="total"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
             </div>
         </div>
     </div>
-   
+
 </body>
