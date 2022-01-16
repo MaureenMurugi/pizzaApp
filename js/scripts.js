@@ -44,5 +44,13 @@ var price = function (pizzaSize, pizzaCrust, pizzaTopping) {
             location.reload();
             alert("Please select a pizza crust");
 
+    };
 
+    if (priceSize == 'large') {
+        priceTopping = pizzaTopping.length * 150;
+    }else if (pizzaSize == 'medium') {
+        priceTopping = pizzaTopping.length * 100;
+    } else if (pizzaSize == 'small') {
+        priceTopping = pizzaTopping.length * 50;
+    }
 }
