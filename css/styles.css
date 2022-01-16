@@ -103,3 +103,19 @@ select{
     padding: 20px;
     background-color: rgba(0,0,0 0.5);
 }
+
+.order-total {
+    display: none;
+}
+.confirm-order {
+    border: 6px solid #948473;
+    border-radius: 15px;
+    background-color: rgba(0,0,0 0.5);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.table-buttons {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
