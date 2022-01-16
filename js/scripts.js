@@ -89,7 +89,27 @@ $(document).ready(function () {
         //pickup
         $("#pick-up").click(function() {
             alert("Hello customer, your order will be ready for pickup in 1 hour. Your order total is " + total);
-        })
-    });
-});
 
+            //refresh page
+            location.reload();
+        });
+
+        $("#checkout").click(function() {
+            //form data
+            var clientName = $("#full-name").val();
+            var clientNumber = $("#phone-number").val();
+            var clientLocation = $("#location").val();
+
+            if (clientName === "" || clientNumber === "" || clientLocation === "") {
+                alert("Please fill in the delivery form. All fields are required")
+            } else {
+                alert("Dear " + clientName + " your order will be delivered to " + clientLocation + " within the hour! Your order total is: " +
+                    grandTotal + " Our rider will call you on arrival");
+            }
+        });
+    });
+
+
+   
+});
+   
