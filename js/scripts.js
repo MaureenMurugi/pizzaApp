@@ -81,7 +81,10 @@ $(document).ready(function () {
             pizzaTopping.push($(this).val());
         });
 
-        
+        var total = price(pizzaSize, pizzaCrust, pizzaTopping);
+        var grandTotal = total + 200;
+        var order = new Pizza(pizzaName,pizzaSize,pizzaCrust,pizzaTopping)
+        $(".current-order").append('<tr><td id="name">' + order.pizza + '</td><td id="size">' +order.size + '</td><td id="crust">' +order.crust + '</td><td id="toppings">' +order.toppings + '</td><td id="total">' +order.total)
     })
 });
 
