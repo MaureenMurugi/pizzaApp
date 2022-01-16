@@ -1,69 +1,83 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-image: url(../img/background-jpg);
     background-attachment: fixed;
     background-size: cover;
 }
-*{
+
+* {
     box-sizing: border-box;
 }
-ul{
+
+ul {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.navigation-container{
+
+.navigation-container {
     width: 100%;
     height: 60px;
     background-color: #ea272d;
-    box-shadow: 2px 2px 12px rgba(0,0,0 20);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0 20);
 }
-.navigation-content{
+
+.navigation-content {
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 12%;
 }
-.cart img{
+
+.cart img {
     height: 30px;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
 }
-.menu ul li a{
+
+.menu ul li a {
     padding: 0px 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     color: #ffffff;
-   
+
 }
-.cart{
+
+.cart {
     display: flex;
     align-items: center;
     font-family: calibri;
     font-weight: bold;
 }
-.cart a{
+
+.cart a {
     color: #ffffff;
     margin: 0px 10px;
 }
+
 .main {
     color: white;
 }
+
 .view-one {
     padding-top: 120px;
 }
-h2{
+
+h2 {
     font-family: 'Gabriela', cursive;
     font-size: 50px;
     padding-bottom: 10px;
     color: white;
 }
+
 .button {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     color: black;
     padding: 15px 32px;
@@ -75,20 +89,23 @@ h2{
     display: inline-block;
     font-size: 16px;
 }
+
 .button:hover {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 
 }
+
 .view-two,
 .view-three,
 .view-four {
     display: none;
 }
+
 input[type=checkbox],
 input[type=text],
 input[type=tel],
 input[type=number],
-select{
+select {
     width: 100%;
     padding: 8px 12px;
     margin: 5px 0;
@@ -101,20 +118,22 @@ select{
 .form {
     border-radius: 15px;
     padding: 20px;
-    background-color: rgba(0,0,0 0.5);
+    background-color: rgba(0, 0, 0 0.5);
 }
 
 .order-total {
     display: none;
 }
+
 .confirm-order {
     border: 6px solid #948473;
     border-radius: 15px;
-    background-color: rgba(0,0,0 0.5);
+    background-color: rgba(0, 0, 0 0.5);
     width: 100%;
     padding: 20px;
     text-align: center;
 }
+
 .table-buttons {
     padding-top: 3%;
     padding-bottom: 3%;
