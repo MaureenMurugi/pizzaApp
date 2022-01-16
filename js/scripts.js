@@ -85,6 +85,11 @@ $(document).ready(function () {
         var grandTotal = total + 200;
         var order = new Pizza(pizzaName,pizzaSize,pizzaCrust,pizzaTopping)
         $(".current-order").append('<tr><td id="name">' + order.pizza + '</td><td id="size">' +order.size + '</td><td id="crust">' +order.crust + '</td><td id="toppings">' +order.toppings + '</td><td id="total">' +order.total)
-    })
+
+        //pickup
+        $("#pick-up").click(function() {
+            alert("Hello customer, your order will be ready for pickup in 1 hour. Your order total is " + total);
+        })
+    });
 });
 
