@@ -53,4 +53,35 @@ var price = function (pizzaSize, pizzaCrust, pizzaTopping) {
     } else if (pizzaSize == 'small') {
         priceTopping = pizzaTopping.length * 50;
     }
+
+    var pizzaTotal = priceSize + priceCrust + priceTopping;
+    return pizzaTotal;
+
 }
+
+
+//user-interface
+$(document).ready(function () {
+    $("#order-online").click(function() {
+        $(".view-two").show();
+        $(".view-one").hide();
+    });
+
+    $("#continue").click(function(event) {
+        event.preventDefault();
+        $(".view-three").show();
+        $(".view-two").hide();
+
+        //get values
+        let pizzaName = $("#pizza option:selected").val();
+        let pizzaSize = $("#size option:selected").val();
+        let pizzaCrust = $("#crust option:selected").val();
+        var pizzaTopping = [];
+        $("input:checkbox[name=toppings]:checked").each(function() {
+            pizzaTopping.push($(this).val());
+        });
+
+        
+    })
+});
+
